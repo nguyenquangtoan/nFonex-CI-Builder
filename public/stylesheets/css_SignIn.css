@@ -1,0 +1,77 @@
+#wrapper {
+	margin: auto;
+	float: none;
+	width: 581px;
+}
+body {
+	font-family: "Open Sans";
+	color: #333;
+	font-size: 13px;
+}
+#SignIn {
+	float: left;
+	width: 582px;
+	margin-top: 100px;
+}
+#SignIn_top {
+	background-image: url(../images/Frame_SignIn.png);
+	float: left;
+	height: 45px;
+	width: 581px;
+}
+#SignIn_middle {
+	float: left;
+	width: 579px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #999999;
+	border-left-color: #999999;
+	background-color: #d2d2d2;
+}
+#SignIn_middle_tr {
+	float: left;
+	width: 581px;
+	margin-top: 10px;
+}
+#tr_space {
+	float: left;
+	height: 30px;
+	width: 581px;
+}
+
+#SignIn_middle_tr_txt {
+	float: left;
+	width: 340px;
+	margin-left: 20px;
+}
+#SignIn_middle_tr_Name {
+	text-align: right;
+	float: left;
+	width: 160px;
+}
+#SignIn_middle_tr_chk {
+	float: left;
+	margin-left: 175px;
+}
+#SignIn_middle_tr_forgot {
+	float: left;
+	width: 500px;
+	margin-left: 20px;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+#SignIn_middle_tr_forgot a {
+	color: #333;
+	text-decoration: none;
+}
+#SignIn_middle_tr_forgot a:hover {
+	text-decoration: underline;
+}
+#SignIn_bottom {
+	background-image: url(../images/Frame_SignUp_bottom.png);
+	float: left;
+	height: 11px;
+	width: 581px;
+}

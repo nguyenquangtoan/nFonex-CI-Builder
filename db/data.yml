@@ -1,0 +1,1668 @@
+
+--- 
+users: 
+  columns: 
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  - name
+  records: 
+  - - 1
+    - lehung@gmail.com
+    - $2a$10$GmieZyjq38/KaSR/uMDmueT0Bw86N7d6EeSAA84F3QFyj25Hq8NeW
+    - 
+    - 
+    - 
+    - 41
+    - 2011-09-29 02:03:14.026933
+    - 2011-09-28 07:24:48.897002
+    - 127.0.0.1
+    - 127.0.0.1
+    - 2011-09-16 04:33:27.631185
+    - 2011-09-29 02:03:14.027933
+    - Hung
+  - - 2
+    - phuc@gmail.com
+    - $2a$10$wbfvelfZAc44zjIb4cNoX.Rxxx89nSNmjN5kU2I4kqEWGm.rGUwKO
+    - 
+    - 
+    - 
+    - 1
+    - 2011-09-20 10:17:54.465943
+    - 2011-09-20 10:17:54.465943
+    - 127.0.0.1
+    - 127.0.0.1
+    - 2011-09-20 10:17:54.351937
+    - 2011-09-23 06:45:55.031774
+    - Phuc
+  - - 3
+    - thao@gmail.com
+    - $2a$10$a9zWSpPIjWErFz/JMLCFdeUIgbpG06tVRObDJ7xHh0i6vrLooKMy.
+    - 
+    - 
+    - 
+    - 1
+    - 2011-09-20 10:20:05.671448
+    - 2011-09-20 10:20:05.671448
+    - 127.0.0.1
+    - 127.0.0.1
+    - 2011-09-20 10:20:05.506439
+    - 2011-09-23 06:45:37.960798
+    - Thao
+  - - 4
+    - thuyen@gmail.com
+    - $2a$10$7rAtcM9gwezhL/CyKbUjcuR7dmKSHSfhfSIeQITAyzZHHc/9BE9Ay
+    - 
+    - 
+    - 
+    - 1
+    - 2011-09-21 08:46:49.793297
+    - 2011-09-21 08:46:49.793297
+    - 127.0.0.1
+    - 127.0.0.1
+    - 2011-09-21 08:46:49.655289
+    - 2011-09-23 06:45:20.494799
+    - Thuyen
+  - - 6
+    - vu@gmail.com
+    - $2a$10$HlQojMIs4HKXiWSSmVu7repcXl8xGL9/V0wbPbL9nTrEFteVY5HLq
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 2011-09-23 06:45:00.030628
+    - 2011-09-23 06:45:00.030628
+    - Vu
+
+--- 
+answers: 
+  columns: 
+  - id
+  - question_id
+  - content
+  - created_at
+  - updated_at
+  - correct
+  - url_answer
+  records: 
+  - - 1
+    - 1
+    - A 1
+    - 2011-09-16 07:01:40.160682
+    - 2011-09-20 08:45:48.797893
+    - false
+    - 
+  - - 2
+    - 1
+    - A 2
+    - 2011-09-16 07:01:40.163682
+    - 2011-09-20 08:45:57.254377
+    - true
+    - 
+  - - 3
+    - 1
+    - A 3
+    - 2011-09-16 07:01:40.165682
+    - 2011-09-20 08:45:48.802894
+    - false
+    - 
+  - - 4
+    - 2
+    - A 1
+    - 2011-09-16 07:01:40.170682
+    - 2011-09-20 08:45:57.258377
+    - true
+    - 
+  - - 5
+    - 2
+    - A 2
+    - 2011-09-16 07:01:40.172682
+    - 2011-09-20 08:45:48.808894
+    - false
+    - 
+  - - 6
+    - 2
+    - A 3
+    - 2011-09-16 07:01:40.174682
+    - 2011-09-20 08:45:48.811894
+    - false
+    - 
+  - - 7
+    - 3
+    - A 1
+    - 2011-09-16 07:01:40.179683
+    - 2011-09-20 08:45:57.261377
+    - true
+    - 
+  - - 8
+    - 3
+    - A 2
+    - 2011-09-16 07:01:40.181683
+    - 2011-09-20 08:45:48.817894
+    - false
+    - 
+  - - 9
+    - 4
+    - QA 2
+    - 2011-09-16 07:10:28.383894
+    - 2011-09-20 08:45:35.203116
+    - false
+    - 
+  - - 10
+    - 4
+    - QA 3
+    - 2011-09-16 07:10:28.386894
+    - 2011-09-20 08:45:35.206116
+    - true
+    - 
+  - - 11
+    - 4
+    - QA 4
+    - 2011-09-16 07:10:28.389895
+    - 2011-09-20 08:45:35.209116
+    - false
+    - 
+  - - 12
+    - 4
+    - QA 12
+    - 2011-09-16 07:10:28.391895
+    - 2011-09-20 08:45:35.211116
+    - false
+    - 
+  - - 13
+    - 5
+    - AA
+    - 2011-09-16 07:10:28.394895
+    - 2011-09-20 08:45:35.214116
+    - false
+    - 
+  - - 14
+    - 5
+    - AC
+    - 2011-09-16 07:10:28.396895
+    - 2011-09-20 08:45:35.217117
+    - false
+    - 
+  - - 15
+    - 5
+    - AX
+    - 2011-09-16 07:10:28.398895
+    - 2011-09-20 08:45:35.220117
+    - false
+    - 
+  - - 16
+    - 5
+    - AW
+    - 2011-09-16 07:10:28.400895
+    - 2011-09-20 08:45:35.223117
+    - true
+    - 
+  - - 17
+    - 6
+    - AD
+    - 2011-09-16 07:10:28.408896
+    - 2011-09-20 08:45:35.227117
+    - true
+    - 
+  - - 18
+    - 6
+    - AZ
+    - 2011-09-16 07:10:28.411896
+    - 2011-09-20 08:45:35.230117
+    - false
+    - 
+  - - 19
+    - 6
+    - AW
+    - 2011-09-16 07:10:28.414896
+    - 2011-09-20 08:45:35.233117
+    - false
+    - 
+  - - 20
+    - 6
+    - AE
+    - 2011-09-16 07:10:28.416896
+    - 2011-09-20 08:45:35.236118
+    - false
+    - 
+  - - 33
+    - 10
+    - sdfasfda
+    - 2011-09-20 02:00:11.280916
+    - 2011-09-20 02:00:11.280916
+    - false
+    - 
+  - - 34
+    - 10
+    - fadfa
+    - 2011-09-20 02:00:11.284916
+    - 2011-09-20 02:00:11.284916
+    - false
+    - 
+  - - 35
+    - 10
+    - dferqw
+    - 2011-09-20 02:00:11.287916
+    - 2011-09-20 02:00:11.287916
+    - false
+    - 
+  - - 36
+    - 10
+    - rqwdsadasd
+    - 2011-09-20 02:00:11.290916
+    - 2011-09-20 02:00:11.290916
+    - false
+    - 
+  - - 37
+    - 10
+    - dqreqwewqewq
+    - 2011-09-20 02:00:11.293916
+    - 2011-09-20 02:00:11.293916
+    - false
+    - 
+  - - 38
+    - 10
+    - ewqewqewq
+    - 2011-09-20 02:00:11.296917
+    - 2011-09-20 02:00:11.296917
+    - true
+    - 
+  - - 39
+    - 11
+    - sdfdf
+    - 2011-09-20 02:00:11.301917
+    - 2011-09-20 02:00:11.301917
+    - false
+    - 
+  - - 40
+    - 11
+    - fsdfds
+    - 2011-09-20 02:00:11.304917
+    - 2011-09-20 02:00:11.304917
+    - true
+    - 
+  - - 41
+    - 11
+    - xcvxcv
+    - 2011-09-20 02:00:11.307917
+    - 2011-09-20 02:00:11.307917
+    - false
+    - 
+  - - 42
+    - 11
+    - xcvcxvcx
+    - 2011-09-20 02:00:11.310917
+    - 2011-09-20 02:00:11.310917
+    - false
+    - 
+  - - 43
+    - 12
+    - A 12
+    - 2011-09-20 02:13:54.892024
+    - 2011-09-20 02:13:54.892024
+    - false
+    - 
+  - - 44
+    - 12
+    - asdf
+    - 2011-09-20 02:13:54.894024
+    - 2011-09-20 02:13:54.894024
+    - true
+    - 
+  - - 45
+    - 12
+    - asdf
+    - 2011-09-20 02:13:54.896024
+    - 2011-09-20 02:13:54.896024
+    - false
+    - 
+  - - 46
+    - 12
+    - asdf
+    - 2011-09-20 02:13:54.898024
+    - 2011-09-20 02:13:54.898024
+    - false
+    - 
+  - - 47
+    - 13
+    - dsf
+    - 2011-09-20 02:13:54.904024
+    - 2011-09-20 02:13:54.904024
+    - false
+    - 
+  - - 48
+    - 13
+    - asgrw
+    - 2011-09-20 02:13:54.906024
+    - 2011-09-20 02:13:54.906024
+    - false
+    - 
+  - - 49
+    - 13
+    - werew
+    - 2011-09-20 02:13:54.909025
+    - 2011-09-20 02:13:54.909025
+    - false
+    - 
+  - - 50
+    - 13
+    - asdsa
+    - 2011-09-20 02:13:54.911025
+    - 2011-09-20 02:13:54.911025
+    - true
+    - 
+  - - 62
+    - 13
+    - "123124214"
+    - 2011-09-20 03:54:59.288887
+    - 2011-09-20 03:54:59.288887
+    - false
+    - 
+  - - 63
+    - 18
+    - !binary |
+      VHLDsm4=
+
+    - 2011-09-20 03:56:10.385954
+    - 2011-09-20 03:56:10.385954
+    - false
+    - 
+  - - 64
+    - 18
+    - !binary |
+      Q+G6p3U=
+
+    - 2011-09-20 03:56:10.388954
+    - 2011-09-20 03:56:10.388954
+    - true
+    - 
+  - - 65
+    - 18
+    - !binary |
+      VnXDtG5n
+
+    - 2011-09-20 03:56:10.391954
+    - 2011-09-20 03:56:10.391954
+    - false
+    - 
+  - - 66
+    - 19
+    - !binary |
+      TcawYQ==
+
+    - 2011-09-20 03:56:10.398955
+    - 2011-09-20 03:56:10.398955
+    - false
+    - 
+  - - 67
+    - 19
+    - !binary |
+      TuG6r25n
+
+    - 2011-09-20 03:56:10.400955
+    - 2011-09-20 03:56:10.400955
+    - false
+    - 
+  - - 68
+    - 19
+    - !binary |
+      VuG7q2EgTuG6r25nIHbhu6thIE3GsGE=
+
+    - 2011-09-20 03:56:10.402955
+    - 2011-09-20 03:56:10.402955
+    - true
+    - 
+  - - 69
+    - 19
+    - !binary |
+      QsOjbw==
+
+    - 2011-09-20 03:56:10.404955
+    - 2011-09-20 03:56:10.404955
+    - false
+    - 
+  - - 70
+    - 19
+    - !binary |
+      VHV54bq/dA==
+
+    - 2011-09-20 04:09:42.989432
+    - 2011-09-20 04:09:42.989432
+    - false
+    - 
+  - - 100
+    - 28
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.158751
+    - 2011-09-22 04:21:58.158751
+    - false
+    - 
+  - - 101
+    - 28
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.166752
+    - 2011-09-22 04:21:58.166752
+    - false
+    - 
+  - - 102
+    - 28
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.169752
+    - 2011-09-22 04:21:58.169752
+    - true
+    - 
+  - - 103
+    - 28
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.172752
+    - 2011-09-22 04:21:58.172752
+    - false
+    - 
+  - - 104
+    - 29
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.183753
+    - 2011-09-22 04:21:58.183753
+    - true
+    - 
+  - - 105
+    - 29
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.188753
+    - 2011-09-22 04:21:58.188753
+    - false
+    - 
+  - - 106
+    - 29
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.192753
+    - 2011-09-22 04:21:58.192753
+    - false
+    - 
+  - - 107
+    - 29
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.195753
+    - 2011-09-22 04:21:58.195753
+    - false
+    - 
+  - - 108
+    - 30
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.204754
+    - 2011-09-22 04:21:58.204754
+    - false
+    - 
+  - - 109
+    - 30
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.214754
+    - 2011-09-22 04:21:58.214754
+    - false
+    - 
+  - - 130
+    - 36
+    - sadas
+    - 2011-09-26 08:10:36.007370
+    - 2011-09-28 07:12:26.167520
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a130.wav
+  - - 131
+    - 36
+    - dasdas
+    - 2011-09-26 08:10:36.011371
+    - 2011-09-28 07:12:26.169521
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a131.wav
+  - - 132
+    - 36
+    - dsada
+    - 2011-09-26 08:10:36.014371
+    - 2011-09-28 07:12:26.170521
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a132.wav
+  - - 133
+    - 36
+    - sdasdasd
+    - 2011-09-26 08:10:36.016371
+    - 2011-09-28 07:12:26.172521
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a133.wav
+  - - 134
+    - 37
+    - das
+    - 2011-09-26 08:10:36.022371
+    - 2011-09-28 07:12:26.176521
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a134.wav
+  - - 135
+    - 37
+    - asd
+    - 2011-09-26 08:10:36.025371
+    - 2011-09-28 07:12:26.178521
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a135.wav
+  - - 136
+    - 37
+    - asdasd
+    - 2011-09-26 08:10:36.027372
+    - 2011-09-28 07:12:26.179521
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a136.wav
+  - - 137
+    - 37
+    - asdasdsa
+    - 2011-09-26 08:10:36.030372
+    - 2011-09-28 07:12:26.181521
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a137.wav
+  - - 150
+    - 41
+    - asdas
+    - 2011-09-26 08:20:09.136152
+    - 2011-09-28 07:21:31.482711
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a150.wav
+  - - 151
+    - 41
+    - dasd
+    - 2011-09-26 08:20:09.140152
+    - 2011-09-28 07:21:31.485711
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a151.wav
+  - - 152
+    - 41
+    - wqewqe
+    - 2011-09-26 08:20:09.143152
+    - 2011-09-28 07:21:31.488711
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a152.wav
+  - - 153
+    - 41
+    - qwe
+    - 2011-09-26 08:20:09.146152
+    - 2011-09-28 07:21:31.491711
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a153.wav
+  - - 154
+    - 42
+    - sadsadas
+    - 2011-09-26 08:20:09.154153
+    - 2011-09-28 07:21:31.496711
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a154.wav
+  - - 155
+    - 42
+    - dasdqwe
+    - 2011-09-26 08:20:09.157153
+    - 2011-09-28 07:21:31.498712
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a155.wav
+  - - 156
+    - 42
+    - wqeqwe
+    - 2011-09-26 08:20:09.161153
+    - 2011-09-28 07:21:31.502712
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a156.wav
+  - - 157
+    - 42
+    - qwqwewqe
+    - 2011-09-26 08:20:09.163153
+    - 2011-09-28 07:21:31.505712
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a157.wav
+  - - 158
+    - 43
+    - vxcv
+    - 2011-09-26 08:21:23.222389
+    - 2011-09-26 08:21:23.222389
+    - false
+    - ""
+  - - 159
+    - 43
+    - xcv
+    - 2011-09-26 08:21:23.226389
+    - 2011-09-26 08:21:23.226389
+    - true
+    - ""
+  - - 160
+    - 43
+    - xcvxc
+    - 2011-09-26 08:21:23.229389
+    - 2011-09-26 08:21:23.229389
+    - false
+    - ""
+  - - 161
+    - 43
+    - vxcvxcv
+    - 2011-09-26 08:21:23.232390
+    - 2011-09-26 08:21:23.232390
+    - false
+    - ""
+  - - 162
+    - 44
+    - vcxv
+    - 2011-09-26 08:21:23.237390
+    - 2011-09-26 08:21:23.237390
+    - false
+    - ""
+  - - 163
+    - 44
+    - xcvxcv
+    - 2011-09-26 08:21:23.240390
+    - 2011-09-26 08:21:23.240390
+    - true
+    - ""
+  - - 164
+    - 44
+    - xcvxc
+    - 2011-09-26 08:21:23.243390
+    - 2011-09-26 08:21:23.243390
+    - false
+    - ""
+  - - 165
+    - 44
+    - vcxvcxxxxxxxxxxxxxxxxxxxxxx
+    - 2011-09-26 08:21:23.245390
+    - 2011-09-26 11:35:17.727845
+    - false
+    - ""
+  - - 174
+    - 47
+    - Fe2O3. xH2O
+    - 2011-09-27 08:53:04.171349
+    - 2011-09-27 09:46:03.779212
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a174.wav
+  - - 175
+    - 47
+    - FE2O3
+    - 2011-09-27 08:53:04.175350
+    - 2011-09-27 09:46:03.783213
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a175.wav
+  - - 176
+    - 47
+    - (Fe3)2O3
+    - 2011-09-27 08:53:04.178350
+    - 2011-09-27 09:46:03.787213
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a176.wav
+  - - 177
+    - 47
+    - Fe3O2
+    - 2011-09-27 08:53:04.180350
+    - 2011-09-27 09:46:03.789213
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a177.wav
+  - - 178
+    - 47
+    - Fe2O3.xH2O
+    - 2011-09-27 08:53:04.183350
+    - 2011-09-27 09:46:03.792213
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a178.wav
+  - - 179
+    - 48
+    - Potassium Sulphate Aluminium Di-sulphide 24 contents of Water
+    - 2011-09-27 08:53:04.188350
+    - 2011-09-27 09:46:03.795213
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a179.wav
+  - - 180
+    - 48
+    - Alum
+    - 2011-09-27 08:53:04.191350
+    - 2011-09-27 09:46:03.797214
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a180.wav
+  - - 181
+    - 48
+    - Ammonia
+    - 2011-09-27 08:53:04.194351
+    - 2011-09-27 09:46:03.799214
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a181.wav
+  - - 182
+    - 48
+    - Glyceryne
+    - 2011-09-27 08:53:04.197351
+    - 2011-09-27 09:46:03.802214
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a182.wav
+  - - 183
+    - 48
+    - Petrol
+    - 2011-09-27 08:53:04.200351
+    - 2011-09-27 09:46:03.804214
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a183.wav
+  - - 184
+    - 49
+    - Electrical - Magnetic - Mechanical
+    - 2011-09-27 08:53:04.208351
+    - 2011-09-27 09:46:03.807214
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a184.wav
+  - - 185
+    - 49
+    - Magnetic - Mechanical - Electrical
+    - 2011-09-27 08:53:04.211352
+    - 2011-09-27 09:46:03.809214
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a185.wav
+  - - 186
+    - 49
+    - Mechanical - Electric
+    - 2011-09-27 08:53:04.213352
+    - 2011-09-27 09:46:03.811214
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a186.wav
+  - - 187
+    - 49
+    - Electrical - Mechanical
+    - 2011-09-27 08:53:04.216352
+    - 2011-09-27 09:46:03.813214
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a187.wav
+  - - 188
+    - 49
+    - Electrical - Magnetic
+    - 2011-09-27 08:53:04.219352
+    - 2011-09-27 09:46:03.816215
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a188.wav
+  - - 189
+    - 50
+    - Glucose
+    - 2011-09-27 08:53:04.224352
+    - 2011-09-27 09:46:03.821215
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a189.wav
+  - - 190
+    - 50
+    - Pyruvates
+    - 2011-09-27 08:53:04.226352
+    - 2011-09-27 09:46:03.823215
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a190.wav
+  - - 191
+    - 50
+    - Ethanol
+    - 2011-09-27 08:53:04.229353
+    - 2011-09-27 09:46:03.825215
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a191.wav
+  - - 192
+    - 50
+    - Alchohol
+    - 2011-09-27 08:53:04.231353
+    - 2011-09-27 09:46:03.828215
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a192.wav
+  - - 193
+    - 50
+    - Pyruvic Acid
+    - 2011-09-27 08:53:04.234353
+    - 2011-09-27 09:46:03.830215
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a193.wav
+  - - 194
+    - 51
+    - 8 - 10 per minute
+    - 2011-09-27 08:53:04.239353
+    - 2011-09-27 09:46:03.833216
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a194.wav
+  - - 195
+    - 51
+    - 15 - 18 per minute
+    - 2011-09-27 08:53:04.241353
+    - 2011-09-27 09:46:03.836216
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a195.wav
+  - - 196
+    - 51
+    - 20 - 21 per minute
+    - 2011-09-27 08:53:04.244353
+    - 2011-09-27 09:46:03.838216
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a196.wav
+  - - 197
+    - 51
+    - 25 - 30 per minute
+    - 2011-09-27 08:53:04.247354
+    - 2011-09-27 09:46:03.840216
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a197.wav
+  - - 198
+    - 51
+    - 32 - 35 per minute
+    - 2011-09-27 08:53:04.249354
+    - 2011-09-27 09:46:03.842216
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a198.wav
+  - - 199
+    - 52
+    - Queen
+    - 2011-09-27 09:13:46.842426
+    - 2011-09-27 09:54:28.055055
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a199.wav
+  - - 200
+    - 52
+    - Culture club
+    - 2011-09-27 09:13:46.848426
+    - 2011-09-27 09:54:28.059056
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a200.wav
+  - - 201
+    - 52
+    - bay city rollers
+    - 2011-09-27 09:13:46.852427
+    - 2011-09-27 09:54:28.061056
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a201.wav
+  - - 202
+    - 52
+    - beatles
+    - 2011-09-27 09:13:46.857427
+    - 2011-09-27 09:54:28.064056
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a202.wav
+  - - 203
+    - 52
+    - supremes
+    - 2011-09-27 09:13:46.860427
+    - 2011-09-27 09:54:28.067056
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a203.wav
+  - - 204
+    - 53
+    - erasure
+    - 2011-09-27 09:13:46.869428
+    - 2011-09-27 09:54:28.071056
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a204.wav
+  - - 205
+    - 53
+    - bros
+    - 2011-09-27 09:13:46.872428
+    - 2011-09-27 09:54:28.073056
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a205.wav
+  - - 206
+    - 53
+    - pet shop boys
+    - 2011-09-27 09:13:46.874428
+    - 2011-09-27 09:54:28.076057
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a206.wav
+  - - 207
+    - 53
+    - backing dancers
+    - 2011-09-27 09:13:46.877428
+    - 2011-09-27 09:54:28.078057
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a207.wav
+  - - 208
+    - 53
+    - presenters on top of pops
+    - 2011-09-27 09:13:46.880428
+    - 2011-09-27 09:54:28.081057
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a208.wav
+  - - 209
+    - 54
+    - wailers
+    - 2011-09-27 09:13:46.886429
+    - 2011-09-27 09:54:28.085057
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a209.wav
+  - - 210
+    - 54
+    - ub40
+    - 2011-09-27 09:13:46.889429
+    - 2011-09-27 09:54:28.088057
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a210.wav
+  - - 211
+    - 54
+    - banshees
+    - 2011-09-27 09:13:46.892429
+    - 2011-09-27 09:54:28.090057
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a211.wav
+  - - 212
+    - 54
+    - hermits
+    - 2011-09-27 09:13:46.895429
+    - 2011-09-27 09:54:28.093058
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a212.wav
+  - - 213
+    - 54
+    - pips
+    - 2011-09-27 09:13:46.898429
+    - 2011-09-27 09:54:28.096058
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a213.wav
+  - - 224
+    - 58
+    - Barbara
+    - 2011-09-27 10:16:04.179189
+    - 2011-09-27 10:18:01.801917
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a224.wav
+  - - 225
+    - 58
+    - Overlord
+    - 2011-09-27 10:16:04.183190
+    - 2011-09-27 10:18:01.803917
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a225.wav
+  - - 226
+    - 58
+    - Barbarossa
+    - 2011-09-27 10:16:04.186190
+    - 2011-09-27 10:18:01.805917
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a226.wav
+  - - 227
+    - 58
+    - Thunderstorm
+    - 2011-09-27 10:16:04.188190
+    - 2011-09-27 10:18:01.807917
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a227.wav
+  - - 228
+    - 58
+    - Red dawn
+    - 2011-09-27 10:16:04.191190
+    - 2011-09-27 10:18:01.809918
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a228.wav
+  - - 229
+    - 59
+    - D-Day
+    - 2011-09-27 10:16:04.197191
+    - 2011-09-27 10:18:01.812918
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a229.wav
+  - - 230
+    - 59
+    - Blitz war
+    - 2011-09-27 10:16:04.199191
+    - 2011-09-27 10:18:01.814918
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a230.wav
+  - - 231
+    - 59
+    - Omaha beach
+    - 2011-09-27 10:16:04.202191
+    - 2011-09-27 10:18:01.816918
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a231.wav
+  - - 232
+    - 59
+    - Beachstorm
+    - 2011-09-27 10:16:04.205191
+    - 2011-09-27 10:18:01.817918
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a232.wav
+  - - 233
+    - 59
+    - Overlord
+    - 2011-09-27 10:16:04.207191
+    - 2011-09-27 10:18:01.819918
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a233.wav
+  - - 234
+    - 60
+    - Albert Speer
+    - 2011-09-27 10:16:04.214191
+    - 2011-09-27 10:18:01.823918
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a234.wav
+  - - 235
+    - 60
+    - "Hermann G\xC3\xB6ring"
+    - 2011-09-27 10:16:04.217192
+    - 2011-09-27 10:18:01.825918
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a235.wav
+  - - 236
+    - 60
+    - Heinrich Himmler
+    - 2011-09-27 10:16:04.220192
+    - 2011-09-27 10:18:01.826919
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a236.wav
+  - - 237
+    - 60
+    - Erich Hartmann
+    - 2011-09-27 10:16:04.223192
+    - 2011-09-27 10:18:01.828919
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a237.wav
+  - - 238
+    - 60
+    - Adolph Galland
+    - 2011-09-27 10:16:04.225192
+    - 2011-09-27 10:18:01.830919
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a238.wav
+  - - 239
+    - 62
+    - Neville Chamberlain
+    - 2011-09-27 10:16:04.233193
+    - 2011-09-27 10:18:01.842919
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a239.wav
+  - - 240
+    - 62
+    - Franklin D. Roosevelt
+    - 2011-09-27 10:16:04.235193
+    - 2011-09-27 10:18:01.843920
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a240.wav
+  - - 241
+    - 62
+    - Winston Churchill
+    - 2011-09-27 10:16:04.237193
+    - 2011-09-27 10:18:01.845920
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a241.wav
+  - - 242
+    - 62
+    - Anthony Eden
+    - 2011-09-27 10:16:04.240193
+    - 2011-09-27 10:18:01.847920
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a242.wav
+  - - 243
+    - 62
+    - John Russell
+    - 2011-09-27 10:16:04.243193
+    - 2011-09-27 10:18:01.849920
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a243.wav
+  - - 244
+    - 63
+    - In the Black Forest
+    - 2011-09-27 10:16:04.248193
+    - 2011-09-27 10:18:01.852920
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a244.wav
+  - - 245
+    - 63
+    - In Austrian Tirol
+    - 2011-09-27 10:16:04.250194
+    - 2011-09-27 10:18:01.854920
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a245.wav
+  - - 246
+    - 63
+    - In French Normandy
+    - 2011-09-27 10:16:04.252194
+    - 2011-09-27 10:18:01.855920
+    - true
+    - C:/Sites/PhoneAnswer/public/audios/a246.wav
+  - - 247
+    - 63
+    - In the Belgian Ardennes
+    - 2011-09-27 10:16:04.255194
+    - 2011-09-27 10:18:01.857920
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a247.wav
+  - - 248
+    - 63
+    - In Arnhem
+    - 2011-09-27 10:16:04.257194
+    - 2011-09-27 10:18:01.859920
+    - false
+    - C:/Sites/PhoneAnswer/public/audios/a248.wav
+
+--- 
+admin_users: 
+  columns: 
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - admin@example.com
+    - $2a$10$z9gpDBkA1jfHxWzKlTp3KeybUxdsNJbmddCju1RBZjFOjE3vz3h2a
+    - 
+    - 
+    - 
+    - 4
+    - 2011-09-26 07:38:21.015695
+    - 2011-09-26 04:47:00.360723
+    - 127.0.0.1
+    - 127.0.0.1
+    - 2011-09-22 01:39:10.221057
+    - 2011-09-26 07:38:21.016695
+
+--- 
+categories: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Internet
+    - 
+    - 
+  - - 2
+    - Social
+    - 
+    - 
+  - - 3
+    - Math
+    - 
+    - 
+  - - 4
+    - Office
+    - 
+    - 
+  - - 5
+    - Economy
+    - 2011-09-23 03:16:14.685791
+    - 2011-09-23 03:16:14.685791
+  - - 6
+    - Education
+    - 2011-09-23 03:16:32.181792
+    - 2011-09-23 03:16:32.181792
+  - - 7
+    - Environment
+    - 2011-09-23 03:16:45.066529
+    - 2011-09-23 03:16:45.066529
+  - - 8
+    - Science
+    - 
+    - 
+  - - 9
+    - Music
+    - 
+    - 
+
+--- 
+statuses: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Activated
+    - 
+    - 
+  - - 2
+    - Inactivated
+    - 
+    - 
+  - - 3
+    - Unreleased
+    - 
+    - 
+
+--- 
+campaigns: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  - status_id
+  - user_id
+  - category_id
+  records: 
+  - - 4
+    - "What is the benefit of channging to nFonex "
+    - 2011-09-16 07:01:40.149681
+    - 2011-09-20 10:24:44.187378
+    - 1
+    - 2
+    - 1
+  - - 5
+    - Campaign 5
+    - 2011-09-16 07:10:28.377894
+    - 2011-09-20 08:45:35.199116
+    - 2
+    - 2
+    - 2
+  - - 8
+    - "What is the benefit of channging to nFonex "
+    - 2011-09-20 02:00:11.272915
+    - 2011-09-20 10:24:27.607430
+    - 1
+    - 3
+    - 2
+  - - 9
+    - How to implement IPPBX
+    - 2011-09-20 02:13:54.886023
+    - 2011-09-20 10:24:08.755352
+    - 1
+    - 3
+    - 3
+  - - 12
+    - What is the benefit of channging to nFonex
+    - 2011-09-20 03:55:16.026845
+    - 2011-09-20 10:23:52.169403
+    - 2
+    - 2
+    - 2
+  - - 16
+    - Camapign test
+    - 2011-09-22 04:21:58.103748
+    - 2011-09-22 04:39:38.083375
+    - 1
+    - 1
+    - 1
+  - - 19
+    - asdasd
+    - 2011-09-26 08:10:35.998370
+    - 2011-09-28 07:12:26.162520
+    - 2
+    - 1
+    - 5
+  - - 21
+    - wqewqe
+    - 2011-09-26 08:20:09.128151
+    - 2011-09-28 07:21:58.587261
+    - 3
+    - 1
+    - 5
+  - - 22
+    - xcvxcv
+    - 2011-09-26 08:21:23.211388
+    - 2011-09-26 08:21:23.211388
+    - 2
+    - 1
+    - 5
+  - - 24
+    - Science
+    - 2011-09-27 08:53:04.162349
+    - 2011-09-27 08:53:04.162349
+    - 3
+    - 1
+    - 8
+  - - 25
+    - Music mix
+    - 2011-09-27 09:13:46.834426
+    - 2011-09-28 07:06:32.708304
+    - 1
+    - 1
+    - 9
+  - - 26
+    - World War 2
+    - 2011-09-27 10:16:04.171189
+    - 2011-09-27 10:16:04.171189
+    - 3
+    - 1
+    - 2
+
+--- 
+participants: 
+  columns: 
+  - id
+  - user
+  - time_total
+  - time_start
+  - time_finish
+  - correct_answer
+  - created_at
+  - updated_at
+  - campaign_id
+  records: 
+  - - 1
+    - "0123124125"
+    - 10
+    - 2006-01-01 00:00:00.000000
+    - 2006-01-01 00:10:00.000000
+    - 2
+    - 2011-09-23 10:20:56.127675
+    - 2011-09-23 10:20:56.127675
+    - 4
+  - - 2
+    - 0999999999
+    - 17
+    - 2006-02-02 02:03:00.000000
+    - 2006-02-04 07:09:00.000000
+    - 3
+    - 2011-09-23 10:21:51.681852
+    - 2011-09-23 10:21:51.681852
+    - 4
+  - - 3
+    - 0999999999
+    - 8
+    - 2007-02-02 02:02:00.000000
+    - 2009-04-07 01:06:00.000000
+    - 2
+    - 2011-09-23 10:22:29.274002
+    - 2011-09-23 10:22:29.274002
+    - 4
+  - - 4
+    - 0923423532
+    - 53
+    - 2008-03-05 04:05:00.000000
+    - 2010-06-06 05:05:00.000000
+    - 2
+    - 2011-09-23 10:24:45.069769
+    - 2011-09-23 10:24:45.069769
+    - 5
+  - - 5
+    - "02132142213"
+    - 30
+    - 2008-03-07 01:02:00.000000
+    - 2008-03-09 06:06:00.000000
+    - 3
+    - 2011-09-23 10:26:03.480254
+    - 2011-09-23 10:26:03.480254
+    - 13
+  - - 6
+    - "012321424"
+    - 89
+    - 2007-02-02 02:03:00.000000
+    - 2009-04-05 03:03:00.000000
+    - 23
+    - 2011-09-23 10:27:21.616723
+    - 2011-09-23 10:27:21.616723
+    - 15
+  - - 7
+    - 0999999999
+    - 60
+    - 2006-03-02 01:05:00.000000
+    - 2006-02-02 01:04:00.000000
+    - 3
+    - 2011-09-23 10:29:45.416948
+    - 2011-09-23 10:29:45.416948
+    - 9
+
+--- 
+settings: 
+  columns: 
+  - id
+  - var
+  - value
+  - thing_id
+  - thing_type
+  - created_at
+  - updated_at
+  records: 
+  - - 9
+    - url_question_pattern
+    - |
+      --- /[pre_campaign]campaign_id/[pre_question]question_id
+
+    - 
+    - 
+    - 2011-09-26 03:52:52.051930
+    - 2011-09-26 03:52:52.051930
+  - - 10
+    - url_answer_pattern
+    - |
+      --- /[pre_campaign]campaign_id/[pre_question]question_id-[pre_answer]answer_id
+
+    - 
+    - 
+    - 2011-09-26 03:52:52.428951
+    - 2011-09-26 03:52:52.428951
+  - - 11
+    - love
+    - |+
+      --- |
+       --- 12
+      
+    - 
+    - 
+    - 2011-09-26 06:35:21.637527
+    - 2011-09-26 06:40:43.386930
+
+--- 
+questions: 
+  columns: 
+  - id
+  - campaign_id
+  - content
+  - created_at
+  - updated_at
+  - url_question
+  records: 
+  - - 1
+    - 4
+    - Q 1
+    - 2011-09-16 07:01:40.156681
+    - 2011-09-16 07:01:40.156681
+    - 
+  - - 2
+    - 4
+    - Q 2
+    - 2011-09-16 07:01:40.168682
+    - 2011-09-16 07:01:40.168682
+    - 
+  - - 3
+    - 4
+    - Q 3
+    - 2011-09-16 07:01:40.177683
+    - 2011-09-16 07:01:40.177683
+    - 
+  - - 4
+    - 5
+    - Q 1
+    - 2011-09-16 07:10:28.381894
+    - 2011-09-16 07:10:28.381894
+    - 
+  - - 5
+    - 5
+    - Q 2
+    - 2011-09-16 07:10:28.392895
+    - 2011-09-16 07:10:28.392895
+    - 
+  - - 6
+    - 5
+    - Q 4
+    - 2011-09-16 07:10:28.405896
+    - 2011-09-16 07:10:28.405896
+    - 
+  - - 10
+    - 8
+    - "Cau hoi "
+    - 2011-09-20 02:00:11.276916
+    - 2011-09-20 02:00:11.276916
+    - 
+  - - 11
+    - 8
+    - ertretsr
+    - 2011-09-20 02:00:11.299917
+    - 2011-09-20 02:00:11.299917
+    - 
+  - - 12
+    - 9
+    - How to implement IPPBX
+    - 2011-09-20 02:13:54.889023
+    - 2011-09-20 10:24:08.761352
+    - 
+  - - 13
+    - 9
+    - Question 123
+    - 2011-09-20 02:13:54.900024
+    - 2011-09-20 02:13:54.900024
+    - 
+  - - 18
+    - 12
+    - !binary |
+      VHLDoWkgxJHhuqV0IGjDrG5oIGfDrCA/
+
+    - 2011-09-20 03:56:10.381954
+    - 2011-09-20 03:56:10.381954
+    - 
+  - - 19
+    - 12
+    - !binary |
+      VGjhu51pIHRp4bq/dCBow7RtIG5heSB0aOG6vyBuw6BvID8=
+
+    - 2011-09-20 03:56:10.395954
+    - 2011-09-20 03:56:10.395954
+    - 
+  - - 28
+    - 16
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.154751
+    - 2011-09-22 04:21:58.154751
+    - 
+  - - 29
+    - 16
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.180752
+    - 2011-09-22 04:21:58.180752
+    - 
+  - - 30
+    - 16
+    - Not the answer you're looking for? Browse other questions tagged
+    - 2011-09-22 04:21:58.201754
+    - 2011-09-22 04:21:58.201754
+    - 
+  - - 36
+    - 19
+    - asdasd
+    - 2011-09-26 08:10:36.003370
+    - 2011-09-28 07:12:26.165520
+    - C:/Sites/PhoneAnswer/public/audios/q36.wav
+  - - 37
+    - 19
+    - asdadas
+    - 2011-09-26 08:10:36.019371
+    - 2011-09-28 07:12:26.174521
+    - C:/Sites/PhoneAnswer/public/audios/q37.wav
+  - - 41
+    - 21
+    - wqeqw
+    - 2011-09-26 08:20:09.133151
+    - 2011-09-28 07:21:31.479710
+    - C:/Sites/PhoneAnswer/public/audios/q41.wav
+  - - 42
+    - 21
+    - qweasdasd
+    - 2011-09-26 08:20:09.149152
+    - 2011-09-28 07:21:31.494711
+    - C:/Sites/PhoneAnswer/public/audios/q42.wav
+  - - 43
+    - 22
+    - xcvxc
+    - 2011-09-26 08:21:23.216389
+    - 2011-09-26 08:21:23.216389
+    - ""
+  - - 44
+    - 22
+    - xcvxvxc
+    - 2011-09-26 08:21:23.234390
+    - 2011-09-26 08:21:23.234390
+    - ""
+  - - 47
+    - 24
+    - What is the formula for Ferric Oxide?
+    - 2011-09-27 08:53:04.167349
+    - 2011-09-27 09:42:04.440523
+    - C:/Sites/PhoneAnswer/public/audios/q47.wav
+  - - 48
+    - 24
+    - What is the name of the compound having symbol -  K2SO4Al2(SO4)3.24H2O
+    - 2011-09-27 08:53:04.185350
+    - 2011-09-27 09:42:04.466525
+    - C:/Sites/PhoneAnswer/public/audios/q48.wav
+  - - 49
+    - 24
+    - An electric motor converts energy ?
+    - 2011-09-27 08:53:04.206351
+    - 2011-09-27 09:42:04.490526
+    - C:/Sites/PhoneAnswer/public/audios/q49.wav
+  - - 50
+    - 24
+    - What new substance forms in Anaerobic Respiration instead of Water ?
+    - 2011-09-27 08:53:04.222352
+    - 2011-09-27 09:42:04.518528
+    - C:/Sites/PhoneAnswer/public/audios/q50.wav
+  - - 51
+    - 24
+    - Normal rate of breathing of Homo Sapians is
+    - 2011-09-27 08:53:04.237353
+    - 2011-09-27 09:42:04.543529
+    - C:/Sites/PhoneAnswer/public/audios/q51.wav
+  - - 52
+    - 25
+    - which mega group was originally called SMILE
+    - 2011-09-27 09:13:46.839426
+    - 2011-09-27 09:41:29.249510
+    - C:/Sites/PhoneAnswer/public/audios/q52.wav
+  - - 53
+    - 25
+    - Who were matt & luke goss
+    - 2011-09-27 09:13:46.863427
+    - 2011-09-27 09:41:29.272512
+    - C:/Sites/PhoneAnswer/public/audios/q53.wav
+  - - 54
+    - 25
+    - who were bob marleys backing group
+    - 2011-09-27 09:13:46.883428
+    - 2011-09-27 09:41:29.289513
+    - C:/Sites/PhoneAnswer/public/audios/q54.wav
+  - - 58
+    - 26
+    - What was the German codename for the invasion of the USSR which took place on 22 June 1941
+    - 2011-09-27 10:16:04.176189
+    - 2011-09-27 10:18:01.799917
+    - C:/Sites/PhoneAnswer/public/audios/q58.wav
+  - - 59
+    - 26
+    - What was the correct codename for the allied invasion of France on 6th June 1944?
+    - 2011-09-27 10:16:04.194190
+    - 2011-09-27 10:18:01.810918
+    - C:/Sites/PhoneAnswer/public/audios/q59.wav
+  - - 60
+    - 26
+    - Who was the commander in chief of the German Luftwaffe (Air Force) until late april 1945?
+    - 2011-09-27 10:16:04.212191
+    - 2011-09-27 10:18:01.821918
+    - C:/Sites/PhoneAnswer/public/audios/q60.wav
+  - - 62
+    - 26
+    - Who was at the beginning of WW2 the prime minister in England?
+    - 2011-09-27 10:16:04.230192
+    - 2011-09-27 10:18:01.840919
+    - C:/Sites/PhoneAnswer/public/audios/q62.wav
+  - - 63
+    - 26
+    - Where was the "Battle of the Bulge" fought?
+    - 2011-09-27 10:16:04.245193
+    - 2011-09-27 10:18:01.851920
+    - C:/Sites/PhoneAnswer/public/audios/q63.wav

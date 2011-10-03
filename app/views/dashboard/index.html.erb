@@ -1,0 +1,132 @@
+<script type="text/javascript" charset="utf-8">  
+          $(function () {  
+      new Highcharts.Chart({  
+        chart: { renderTo: 'orders_chart' },  
+        title: { text: 'Participants by Day' },  
+        xAxis: { type: 'datetime' },  
+        yAxis: {  
+          title: { text: 'Total play'}  
+        },  
+        series: [{  
+      pointInterval: <%= 1.day * 1000 %>,  
+      pointStart: <%= 2.weeks.ago.at_midnight.to_i * 1000 %>,  
+      data: <%= (2.weeks.ago.to_date..Date.today).map { |date| Participant.total_on(date).to_f}.inspect %> 
+    }]    
+      });  
+    });  
+ </script> 
+<div id="containt"><!-- open containt-->
+<% title "Dashboard" %>
+<div id="dashboard_content"><!-- Open dashboard_content -->
+            	<div id="dashboard_content_campaign"><!-- Open dashboard_content_campaign -->
+                
+                	<div id="dashboard_content_campaign_title">
+                    	Recent Campaigns
+                    </div><!-- End dashboard_content_campaign_title -->
+                    
+                    <div id="dashboard_content_campaign_content"><!-- Open dashboard_content_campaign_content -->
+                    
+                    	<div id="dashboard_content_campaign_content_tr_title"><!--Open dashboard_content_campaign_content_tr_title -->
+                        	<div id="dashboard_content_campaign_content_tr_title_id">
+                            	ID
+                            </div>
+                            <div id="dashboard_content_campaign_content_tr_title_Name">
+                            	NAME
+                            </div>
+                            <div id="dashboard_content_campaign_content_tr_title_categories">
+                            	CATEGORIES
+                            </div>
+                            <div id="dashboard_content_campaign_content_tr_title_categories">
+                            	AUTHOR
+                            </div>
+                            <div id="dashboard_content_campaign_content_tr_title_nUMBER">
+                            	TOTAL QUESTION 
+                            </div>
+                        </div><!--End dashboard_content_campaign_content_tr_title -->
+                        
+                        <% for campaign in @campaign %>
+                        <div id="dashboard_content_campaign_content_TR"><!-- Open dashboard_content_campaign_content_TR -->
+                        	<div id="dashboard_content_campaign_content_TR_Id">
+                            	<%=h campaign.id %>
+                            </div>
+                            <div id="dashboard_content_campaign_content_TR_name">
+                            	<%=h campaign.name %>
+                            </div>
+                            <div id="dashboard_content_campaign_content_TR_categories">
+                            	<%=h campaign.category.name %>
+                            </div>
+                            <div id="dashboard_content_campaign_content_TR_categories">
+                            	<%=h campaign.user.name %>
+                            </div>
+                            <div id="dashboard_content_campaign_content_TR_number">
+                            	<%=h campaign.questions.count %>
+                            </div>
+                        		
+                        </div><!-- End dashboard_content_campaign_content_TR -->
+                        <% end %>
+                    
+                    </div><!-- End dashboard_content_campaign_content -->
+                </div><!-- End dashboard_content_campaign -->
+                
+                <!----------------------- table Partitipant---- -->
+                
+                <div id="dashboard_content_PC"><!-- open content_PC -->
+                	<div id="dashboard_content_PC_Participant"><!-- Open dashboard_content_PC_Participant -->
+                    	<div id="dashboard_content_PC_Participant_title">
+                        	Recent Participants
+                        </div>
+                        <div id="dashboard_content_PC_Participant_content">
+                        	<div id="dashboard_content_PC_Participant_content_tr_title">
+                            	<div id="dashboard_content_PC_Participant_content_tr_title_Phone">
+                                	PHONE NUMBER
+                                </div>
+                                <div id="dashboard_content_PC_Participant_content_tr_title_Datetime">
+                                	DATETIME
+                                </div>
+                            	
+                            </div><!-- End dashboard_content_PC_Participant_content_tr_title -->
+                            
+                            <% for participant in @participant %>
+                            <div id="dashboard_content_PC_Participant_content_TR">
+                            	<div id="dashboard_content_PC_Participant_content_TR_Phone">
+                                	<%=h  participant.user %>
+                                </div>
+                                <div id="dashboard_content_PC_Participant_content_TR_datetime">
+                                	<%=h  participant.created_at %>
+                                </div>
+                            </div><!-- End dashboard_content_PC_Participant_content_TR -->
+                            <% end %>
+                            
+                        </div><!-- End dashboard_content_PC_Participant_content -->
+                    
+                    </div><!-- End dashboard_content_PC_Participant -->
+                    
+                    <!-- ------------------------ Table Chart ----------------------- -->
+                    <div id="dashboard_content_PC_Chart">
+                    	<div id="dashboard_content_PC_Chart_title"><!-- dashboard_content_PC_Chart_title -->
+                        	Chart <%=Participant.total_on(Time.now)%>
+                        </div><!--End dashboard_content_PC_Chart_title -->
+                        
+                        <div id="dashboard_content_PC_Chart_content">
+                        	<div id="dashboard_content_PC_Chart_content_tr">
+                            	 <div id="orders_chart" style="width: 560px; height: 300px;"></div>  
+					<table class="pretty">  
+					  <!-- Orders table code here -->  
+					 </table>
+                        	</div>
+                            
+                        	<div id="dashboard_content_PC_Chart_content_tr2">
+                        		
+                        	</div><!--End dashboard_content_PC_Chart_content_tr2 -->
+                            
+                        </div><!--End dashboard_content_PC_Chart_content -->
+                    
+                    </div><!-- End dashboard_content_PC_Chart -->
+                    
+                </div><!-- End content_PC -->
+            
+            </div><!-- End dashboard_content -->
+  
+</div><!-- End_containt -->
+
+     

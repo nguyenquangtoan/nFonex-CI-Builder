@@ -1,0 +1,20 @@
+<% title "Participants" %>
+<div id="containt"><!-- open containt-->
+<h1>Recent new participants</h1>
+<br/>
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Author</th>
+    </tr>
+  <% for participant in @participant %>
+    <tr>
+      <td><%=h participant.id %></td>
+      <td><%=h participant.user %></td>
+      <td><%=h participant.user %></td>      
+    </tr>
+  <% end %>
+</table>
+
+</div><!-- End_containt -->

@@ -1,0 +1,162 @@
+﻿<% title "Show Campaign" %>
+<div id="containt"><!-- open containt-->
+        
+        	<div id="view_content"><!-- View_content -->
+        	<div id="view_content_left"><!-- view content_left -->
+        	<div id="view_content_left_NameCampaign"><!-- Open Campaign name -->
+            	<div id="view_content_Name">
+                	<%= @campaign.name %>
+                	<%if @campaign.check_publish?%>
+                		||OK||
+                	<%else%>
+                		||NOT OK||
+                	<%end%>
+                </div>
+                
+                <div id="view_content_describe"><!-- DESCRIBE -->
+                	 <div id="view_content_describe_authorStatus">
+                     	AUTHOR:
+                     </div>
+                     <div id="view_content_describe_authorStatus2">
+                     	<%= @campaign.user.name.upcase %>
+                     </div>
+                     <div id="view_content_describe_authorStatus">
+                     	STATUS:
+                     </div>
+                     <div id="view_content_describe_authorStatus2">
+                     	<%= @campaign.status.name.upcase %>
+                     </div>
+                </div><!-- END DESCRIBE -->
+                </div> <!-- End Campaign Name -->
+                <% for question in @campaign.questions %>
+                
+                <div id="view_content_Question_Combo"><!-- Question combo -->
+                
+                	<div id="view_content_Question_Combo_Question"><!-- question -->
+                    	<div id="view_content_Question_Combo_Question_speaker">
+                        	<%if question.check_url_sound?%>
+					<img src="/images/speaker.png" />
+				<%else%>
+					<img src="/images/speaker_mute.png" />
+				<%end%>
+                        </div>
+                        <div id="view_content_Question_Combo_Question_Number">
+                        	<%= question.index_question %>:
+                        </div>
+                        <div id="view_content_Question_Combo_Question_Question">
+                        	<%= question.content %>
+                        </div>
+                    </div><!-- End question -->
+                    <% for answer in question.answers %>
+                    <div id="view_content_Question_Combo_AnserAll"><!-- All question -->                    
+                    	<div id="view_content_Question_Combo_Answer"><!-- Combo Answer -->
+                    		<div id="view_content_Question_Combo_Question_speaker">
+                    			<%if answer.check_url_sound?%>
+                        			<img src="/images/speaker.png" />
+                        		<%else%>
+                        			<img src="/images/speaker_mute.png" />
+                        		<%end%>
+                    		
+                        	</div>
+                        <div id="view_content_Question_Combo_Question_Number">
+                        <%= question.index_question %>.<%= "#{question.answers.index(answer)+1}" %>
+                        </div>
+                        <div id="view_content_Question_Combo_Answer_Answer">
+                        	<% if answer.correct?%>
+                        	<b><u><%=h answer.content %></b></u>
+                        	<%else%>
+                        	<%=h answer.content %>
+                        	<%end%>	
+                        </div>
+                   	  </div><!-- combo Answer -->
+                      
+                      <!-- ------------------------ -->
+                    </div><!-- End All question -->
+                    <%end%>
+                </div><!-- End Question_combo -->
+                <%end%>
+                
+                <!-- -------------------Question combo----------------------------- -->
+                
+                
+                <div id="containt_content_PageBreak">
+                	<div id="containt_content_PageBreak_Previous">
+                    	
+                    </div>
+                </div>
+                </div><!-- end view_content_left -->
+                
+                <div id="view_content_right"><!-- content_right -->
+                	<div id="view_content_right_frame"><!-- content_right_frame -->
+                    	<div id="view_content_right_frame_bar">
+                        	Campaign Stats
+                        </div>
+                        
+                        <div id="view_content_right_frame_content"><!-- Open frame content -->
+                        	<div id="view_content_right_frame_content_tr"><!-- TR -->
+                        		<div id="view_content_right_frame_content_details">
+                                	QUESTION AMOUNT
+                           		</div>
+                                <div id="view_content_right_frame_content_details2">
+                                	<%= @campaign.questions.count %>
+                                </div>                               
+                            </div><!-- End tr -->
+                            
+                            <div id="view_content_right_frame_content_tr"><!-- TR -->
+                        		<div id="view_content_right_frame_content_details">
+                                	PARTICIPATION TURN
+                           		</div>
+                                <div id="view_content_right_frame_content_details2">
+                                	<%= @campaign.participants.count%>
+                                	</div>                               
+                            </div><!-- End tr -->
+                            
+                            <div id="view_content_right_frame_content_tr"><!-- TR -->
+                        		<div id="view_content_right_frame_content_details">
+                                	PARTICIPANT AMOUNT
+                           		</div>
+                                <div id="view_content_right_frame_content_details2">
+                                	<%= @campaign.participants.all(:select => 'distinct(user)').count%>
+                                </div>                               
+                            </div><!-- End tr -->
+                            
+                            <div id="view_content_right_frame_content_tr"><!-- TR -->
+                        		<div id="view_content_right_frame_content_details">
+                                	LEADING PARTICIPANT
+                           		</div>
+                                <div id="view_content_right_frame_content_details2">
+                                	jaycee@gmail.com
+                                </div>                               
+                            </div><!-- End tr -->
+                        
+                        </div><!-- End frame content -->
+                    </div><!-- End content_right_frame -->
+                    
+                    <!-- -------------------------------------------------- -->
+                    
+                    <div id="view_content_right_frame"><!-- content_right_frame -->
+                    	<div id="view_content_right_frame_bar">
+                        	Campaign Stats
+                        </div>
+                        
+                        <div id="view_content_right_frame_content"><!-- Open frame content -->
+                        	<%= @campaign.participants.all.each do |p|%>	
+                        	<div id="view_content_right_frame_content_tr2">
+                        		<%= p.user%>                           	
+				</div>
+				<%end%>
+                            
+                        
+                        </div><!-- End frame content -->
+                    </div><!-- End content_right_frame -->
+                   
+                	
+                </div><!-- End content_right -->
+                <div id="view_content_tr_btn">
+                	<div id="view_content_tr_btn_btnBack">
+                   		<a href="#">BACK TO CAMPAIGN LIST</a>
+                    </div>
+                </div><!-- End tr_btn -->
+            </div><!-- End View_content -->
+        	
+        </div><!-- End containt-->
