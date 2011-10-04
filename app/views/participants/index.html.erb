@@ -1,6 +1,4 @@
 <div id="containt"><!-- open containt-->
-        	
-        
         <div id="containt_content"><!-- Open Ccontaint_content -->
        	  <div id="containt_content_content_left"><!-- Open containt_content_left -->
           
@@ -8,18 +6,19 @@
                 	<div id="Participant_content_left_Filter_title">
                     	Filter
                     </div><!-- End Participant_content_left_Filter_title -->
+                    <%= form_for @search do |f| %>
                     <div id="Participant_content_left_Filter_content">
                     	<div id="Participant_content_left_Filter_content_TR">
                         	SEARCH USER:
                         </div>
                         <div id="Participant_content_left_Filter_content_TR">
-                        	<input type="text" size="28" />
+                        	<%= f.text_field :user_contains , :size=>28 %>
                         </div>
                         <div id="Participant_content_left_Filter_content_TR">
                         	SEARCH CAMPAIGN:
                         </div>
                         <div id="Participant_content_left_Filter_content_TR">
-                        	<input type="text" size="28" />
+                        	<%= f.text_field :campaign_name_contains , :size=>28%>
                         </div>
                         <div id="Participant_content_left_Filter_content_TR">
                         	<div id="Participant_content_left_Filter_content_TR_td">
@@ -44,24 +43,24 @@
                         
                         <div id="Participant_content_left_Filter_content_TR">
                         	<div id="Participant_content_left_Filter_content_TR_td">
-                            	<input type="text" size="11" />
+                            	<%= f.text_field :time_total_gte, :size => 11 %>
                             </div>
                             <div id="Participant_content_left_Filter_content_TR_TD2">
-                            	<input type="text" size="11" />
+                            	<%= f.text_field :time_total_lte, :size => 11 %>
                             </div>
                         </div><!-- END tr -->
                         
                     	 <div id="Participant_content_left_Filter_content_TR"><!-- btn -->
                          	<div id="Participant_content_left_Filter_content_TR_btnFilter">
-                           		<a href="#">Filter</a>
+                           		<%= link_to 'Filter', '#', :onclick=>"$('form').submit()" %>
                             </div>
                             <div id="Participant_content_left_Filter_content_TR_btnClear">
-                           		<a href="#">Clear</a>
+                           		<%= link_to "Clear", participants_path %>
                             </div>
                         	
                         </div><!-- End btn -->
                     </div><!-- End Participant_content_left_Filter_content -->
-                    
+                    <% end %>
                 </div><!-- End Participant_content_left_Filter -->
                 
                 
@@ -117,8 +116,6 @@
                                 <div id="Participant_content_right_table_content_TR_Duaration">
                                 	<%=h participant.time_total %> s
                                 </div>
-    
-      				
                             	
                             </div><!-- End Participant_content_right_table_TR-->
                             <% end %>
@@ -133,7 +130,7 @@
                 <!-- -------------------------------------------------------------------------- -->
                 <div id="containt_content_PageBreak">
                 	<div id="containt_content_PageBreak_Previous">
-                    	
+                    	<%= paginate @participant %>
                     </div>
                 </div><!-- End Page Break -->
                 

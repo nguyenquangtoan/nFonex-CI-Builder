@@ -7,11 +7,21 @@
         yAxis: {  
           title: { text: 'Total play'}  
         },  
+        
         series: [{  
+        		name: "Total turn play",
       pointInterval: <%= 1.day * 1000 %>,  
       pointStart: <%= 2.weeks.ago.at_midnight.to_i * 1000 %>,  
       data: <%= (2.weeks.ago.to_date..Date.today).map { |date| Participant.total_on(date).to_f}.inspect %> 
-    }]    
+    },
+    	{  
+        		name: "Total participant",
+        		type: 'column',
+      pointInterval: <%= 1.day * 1000 %>,  
+      pointStart: <%= 2.weeks.ago.at_midnight.to_i * 1000 %>,  
+      data: <%= (2.weeks.ago.to_date..Date.today).map { |date| Participant.total_participant_on(date).to_f}.inspect %> 
+    }]
+    
       });  
     });  
  </script> 

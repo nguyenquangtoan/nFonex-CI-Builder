@@ -5,5 +5,9 @@ class Participant < ActiveRecord::Base
   end
   def self.total_on(date)  
   	  where("date(created_at) = ?",date).count
-  end  
+  end
+  def self.total_participant_on(date)  
+  	  Participant.find(:all, :group=>'user', :conditions => ["date(created_at) = ?", date]).count
+
+  end    
 end

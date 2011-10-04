@@ -6,11 +6,6 @@
         	<div id="view_content_left_NameCampaign"><!-- Open Campaign name -->
             	<div id="view_content_Name">
                 	<%= @campaign.name %>
-                	<%if @campaign.check_publish?%>
-                		||OK||
-                	<%else%>
-                		||NOT OK||
-                	<%end%>
                 </div>
                 
                 <div id="view_content_describe"><!-- DESCRIBE -->
@@ -95,7 +90,7 @@
                         <div id="view_content_right_frame_content"><!-- Open frame content -->
                         	<div id="view_content_right_frame_content_tr"><!-- TR -->
                         		<div id="view_content_right_frame_content_details">
-                                	QUESTION AMOUNT
+                                	TOTAL QUESTION
                            		</div>
                                 <div id="view_content_right_frame_content_details2">
                                 	<%= @campaign.questions.count %>
@@ -104,29 +99,35 @@
                             
                             <div id="view_content_right_frame_content_tr"><!-- TR -->
                         		<div id="view_content_right_frame_content_details">
-                                	PARTICIPATION TURN
+                                	TOTAL PARTICIPATION
                            		</div>
                                 <div id="view_content_right_frame_content_details2">
-                                	<%= @campaign.participants.count%>
+                                	<%= @campaign.participants.all(:select => 'distinct(user)').count%>
                                 	</div>                               
                             </div><!-- End tr -->
                             
                             <div id="view_content_right_frame_content_tr"><!-- TR -->
                         		<div id="view_content_right_frame_content_details">
-                                	PARTICIPANT AMOUNT
+                                	PARTICIPANT TURN
                            		</div>
                                 <div id="view_content_right_frame_content_details2">
-                                	<%= @campaign.participants.all(:select => 'distinct(user)').count%>
+                                	<%= @campaign.participants.count%>
                                 </div>                               
                             </div><!-- End tr -->
                             
                             <div id="view_content_right_frame_content_tr"><!-- TR -->
                         		<div id="view_content_right_frame_content_details">
-                                	LEADING PARTICIPANT
+                                	TOP 5 PARTICIPANT
                            		</div>
-                                <div id="view_content_right_frame_content_details2">
-                                	jaycee@gmail.com
-                                </div>                               
+                           		
+                           		
+					<div id="view_content_right_frame_content_details2">
+						<% for p in @campaign.top_participant(5) %>
+						<%= p.user %><br/>
+						<%end%>
+					</div>
+					
+                                                               
                             </div><!-- End tr -->
                         
                         </div><!-- End frame content -->
@@ -136,13 +137,13 @@
                     
                     <div id="view_content_right_frame"><!-- content_right_frame -->
                     	<div id="view_content_right_frame_bar">
-                        	Campaign Stats
+                        	Recent Play
                         </div>
                         
                         <div id="view_content_right_frame_content"><!-- Open frame content -->
-                        	<%= @campaign.participants.all.each do |p|%>	
+                        	<% for p in @campaign.recent_participant(5) %>	
                         	<div id="view_content_right_frame_content_tr2">
-                        		<%= p.user%>                           	
+                        		<%= p.user%> : <%= p.time_total%>s                            	
 				</div>
 				<%end%>
                             

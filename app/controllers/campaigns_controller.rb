@@ -59,7 +59,7 @@ class CampaignsController < ApplicationController
   end
 
   def update
-    @campaign = Campaign.find(params[:id])    
+    @campaign = Campaign.find(params[:id])   
     if params["save.x"]            	        	    	    
     end    
     if params["save_publish.x"] #&& check_publish?

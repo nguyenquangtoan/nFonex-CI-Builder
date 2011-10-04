@@ -39,7 +39,8 @@
   
   <div id="new_content_tr_btnSave"><!-- tr_btnSave -->
 	    <div id="new_content_btnSave">                	
-	    	<%= image_submit_tag("btn_Save.png", {:name => "save"})%>
+	    	<!--<%= image_submit_tag("btn_Save.png", {:name => "save"})%>-->
+	    	<%= link_to 'Save', '#', :onclick=>"$('form').submit()" %>
 	    </div>
 	    
 	    <div id="new_content_btnPublish">

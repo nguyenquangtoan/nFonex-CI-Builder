@@ -117,14 +117,20 @@
                             
                             <div id="view_content_right_frame_content_tr"><!-- TR -->
                         		<div id="view_content_right_frame_content_details">
-                                	TOP 5 PARTICIPANT
+                                	TOP 5 PARTICIPANTS
                            		</div>
-                           		
+                                <div id="view_content_right_frame_content_details2">
+                                <% for p in @campaign.top_participant(5) %>
+                                	<div id="view_content_right_frame_content_details2_sdt">
+                                    	<%= p.user %><br/>
+                                    </div>
+                                    <%end%>
+                                </div>
                            		
 					<div id="view_content_right_frame_content_details2">
-						<% for p in @campaign.top_participant(5) %>
-						<%= p.user %><br/>
-						<%end%>
+						
+						
+						
 					</div>
 					
                                                                
@@ -137,25 +143,37 @@
                     
                     <div id="view_content_right_frame"><!-- content_right_frame -->
                     	<div id="view_content_right_frame_bar">
-                        	Recent Play
+                        	Recent Participants
                         </div>
                         
                         <div id="view_content_right_frame_content"><!-- Open frame content -->
-                        	<% for p in @campaign.recent_participant(5) %>	
                         	<div id="view_content_right_frame_content_tr2">
-                        		<%= p.user%> : <%= p.time_total%>s                            	
-				</div>
-				<%end%>
-                            
-                        
+                            	<div id="view_content_right_frame_content_details">
+                                	PHONE NUMBER
+                           		</div>
+                                <div id="view_content_right_frame_content_details2">
+                                	DATETIME
+                                </div>   
+                        	</div><!-- End tr2 -->
+                        	<% for p in @campaign.recent_participant(5) %>
+                            <div id="view_content_right_frame_content_tr"><!-- TR -->
+                        		<div id="view_content_right_frame_content_details">
+                                	<%= p.user%>
+                           		</div>
+                                <div id="view_content_right_frame_content_details2">
+                                	<%= p.created_at.to_s(:short)%>
+                                </div>                               
+                            </div><!-- End tr -->
+                            <%end%>    
                         </div><!-- End frame content -->
+                        
                     </div><!-- End content_right_frame -->
                    
                 	
                 </div><!-- End content_right -->
                 <div id="view_content_tr_btn">
                 	<div id="view_content_tr_btn_btnBack">
-                   		<a href="#">BACK TO CAMPAIGN LIST</a>
+                   	<%= link_to "BACK TO CAMPAIGN LIST", campaigns_path %>	
                     </div>
                 </div><!-- End tr_btn -->
             </div><!-- End View_content -->

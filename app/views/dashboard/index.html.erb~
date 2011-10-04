@@ -2,14 +2,16 @@
           $(function () {  
       new Highcharts.Chart({  
         chart: { renderTo: 'orders_chart' },  
-        title: { text: 'Orders by Day' },  
+        title: { text: 'Participants by Day' },  
         xAxis: { type: 'datetime' },  
         yAxis: {  
-          title: { text: 'Dollars'}  
+          title: { text: 'Total play'}  
         },  
         series: [{  
-          data: [1, 2, 5, 7, 3]  
-        }]  
+      pointInterval: <%= 1.day * 1000 %>,  
+      pointStart: <%= 2.weeks.ago.at_midnight.to_i * 1000 %>,  
+      data: <%= (2.weeks.ago.to_date..Date.today).map { |date| Participant.total_on(date).to_f}.inspect %> 
+    }]    
       });  
     });  
  </script> 
@@ -38,7 +40,7 @@
                             	AUTHOR
                             </div>
                             <div id="dashboard_content_campaign_content_tr_title_nUMBER">
-                            	TOTAL QUESTION
+                            	TOTAL QUESTION 
                             </div>
                         </div><!--End dashboard_content_campaign_content_tr_title -->
                         
@@ -102,7 +104,7 @@
                     <!-- ------------------------ Table Chart ----------------------- -->
                     <div id="dashboard_content_PC_Chart">
                     	<div id="dashboard_content_PC_Chart_title"><!-- dashboard_content_PC_Chart_title -->
-                        	Chart
+                        	Chart <%=Participant.total_on(Time.now)%>
                         </div><!--End dashboard_content_PC_Chart_title -->
                         
                         <div id="dashboard_content_PC_Chart_content">

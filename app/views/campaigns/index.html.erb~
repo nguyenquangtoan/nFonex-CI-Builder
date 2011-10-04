@@ -45,7 +45,7 @@
                     		SEARCH AUTHOR
                     	</div>
                     	<div id="containt_content_content_left_filter_Textbox">
-                    		<%= f.text_field :name_contains %>
+                    		<%= f.text_field :user_name_contains %>
                     	</div>
                     	<div id="containt_content_content_left_filter_titleSearch">
                     		CREATE ART
@@ -61,7 +61,7 @@
                     
                     <div id="containt_content_content_left_filter_Btn">
                     	<div id="containt_content_content_left_filter_btnFilter">
-                   			<%= link_to_function("Search", "$('campaign_search').submit();") %>
+                   			<%= link_to 'Submit', '#', :onclick=>"$('form').submit()" %>
 			</div>
                         <div id="containt_content_content_left_filter_btn_Clear">
                    			<%= link_to "Cancel", campaigns_path %>

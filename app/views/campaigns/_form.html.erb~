@@ -30,21 +30,21 @@
   <%= f.fields_for :questions do |builder| %>
     <%= render "question_fields", :f => builder %>
   <% end %>
-  
   <div id="new_content_tr_btnAddQuestion"><!-- btn Add question -->
-	<div id="new_content_btnAddQuestion"> 
-		<%= link_to_add_fields image_tag("btn_AddQuestion.png"), f, :questions %>
-	</div>
-  </div><!-- End btn Add question -->
+                	<div id="new_content_btnAddQuestion"> 
+                	<%= link_to_add_fields "Add Question", f, :questions %>
+                    </div>
+                
+                </div><!-- End btn Add question -->
   
   <div id="new_content_tr_btnSave"><!-- tr_btnSave -->
 	    <div id="new_content_btnSave">                	
-	    <%= image_submit_tag("btn_Save.png", {:name => "save"})%>
+	    	<%= image_submit_tag("btn_Save.png", {:name => "save"})%>
 	    </div>
 	    
 	    <div id="new_content_btnPublish">
 	    	<%= image_submit_tag("bnt_publish.png", {:name => "save_publish"})%>
-	    </div>          
+	    </div>        
 	    
 	    
   </div><!-- End tr_btnSave -->
