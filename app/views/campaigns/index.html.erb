@@ -78,19 +78,19 @@
                     	<div id="containt_content_content_right_tableCampaign_title"><!-- Open containt_content_right_table_campaign_title -->
                         	
                         	<div id="containt_content_content_right_tableCampaign_title_Id">
-                            	Id
+                            	<%= sort_link @search, :id,'ID' %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_title_Name">
-                            	Campaign name
+                            	<%= sort_link @search, :name,'Name' %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_title_Author">
-                            	Author
+                            	<%= sort_link @search, :user_name,'Author' %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_title_Author">
-                            	Categories
+                            	<%= sort_link @search, :category_name,'Categories' %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_title_Author">
-                            	Amount
+                            	<%= sort_link @search, :num_questions ,'Amount' %>
                             </div>
                              <div id="containt_content_content_right_tableCampaign_title_Author">
                             	
@@ -113,7 +113,7 @@
                             	<%= campaign.category.name %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_tr_Author">
-                            	<%= campaign.questions.count %> questions
+                            	<%= campaign.count_questions %> questions
                             </div>
                             <div id="containt_content_content_right_tableCampaign_tr_Author"><!-- Action -->
                             	<div id="containt_content_content_right_tableCampaign_tr_btnView"> 

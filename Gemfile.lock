@@ -168,8 +168,8 @@ DEPENDENCIES
   activeadmin
   capybara
   devise
+  fastercsv
   formtastic
-  haml
   haml-rails
   hpricot
   jquery-rails

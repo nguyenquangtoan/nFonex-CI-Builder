@@ -3,7 +3,35 @@ class Participant < ActiveRecord::Base
   def self.recent(number)
   	  self.find :all, :limit => number ,:order=> 'created_at desc'     
   end
+  
   def self.total_on(date)  
   	  where("date(created_at) = ?",date).count
-  end  
+  end
+  
+  def self.total_participant_on(date)  
+  	  Participant.find(:all, :group=>'user', :conditions => ["date(created_at) = ?", date]).count
+
+  end
+  
+  def self.get_week(number)
+  	  start_day = DateTime.civil(2011, 9, 19 , 0, 0, 0, 0)
+  	  end_day = start_day.end_of_week()
+  	  if number > 1
+  	  	  (number-1).times do
+  	  	  	  start_day = start_day.next_week()
+  	  	  end
+  	  	  end_day = start_day.end_of_week()
+  	  end
+  	  Participant.find(:all, :conditions => ["created_at between ? and ?",start_day, end_day])
+  end
+  
+  def self.get_top_week(number)
+  	  list = get_week(number)
+  	  
+  end
+  
+  def self.top_participant(number)
+  	  #Participant.find :all, :limit=> number, :order=> 'time_total asc', :select => 'distinct(user)'
+  	  Participant.find :all, :limit=> number, :order=> 'time_total asc', :select => 'distinct(user)'
+  end
 end

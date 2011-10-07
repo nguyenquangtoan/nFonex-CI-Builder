@@ -5,6 +5,7 @@ class Campaign < ActiveRecord::Base
   belongs_to :status
   belongs_to :user
   accepts_nested_attributes_for :questions, :reject_if => lambda { |a| a[:content].blank? }, :allow_destroy => true
+  attr_accessor :num_questions
   named_scope :activated,      :conditions => { :status_id => "1" }
   named_scope :inactivated,    :conditions => { :status_id => "2" }
   named_scope :unreleased,    :conditions => { :status_id => "3" }
@@ -19,6 +20,19 @@ class Campaign < ActiveRecord::Base
       self.find :all
     end
   end
+  
+  def num_questions
+  	  self.questions.count
+  end
+  
+  def count_questions
+  	  self.questions.count  
+  end
+  
+  def count_questions=(number)
+  	  
+  end
+  
   def self.limit_size_sound
     	  
   end
@@ -40,9 +54,15 @@ class Campaign < ActiveRecord::Base
   end
   
   def top_participant(number)
-  	  self.participants.find :all, :limit=> number, :order=> 'time_total asc', :select => 'distinct(user)'
+  	  #self.participants.find :all, :limit=> number, :order=> 'time_total asc', :select => 'distinct(user)'
   	  #self.participants.find :all, :limit=> number, :order=> 'time_total asc', :group => 'user'
+  	  self.participants.all(
+  	  	  :group=>"user",
+  	  	  :limit=>number,
+  	  	  :order=>"time_total asc"
+  	  	  )  	  
   end
+  
   
   def check_publish?
   	  self.questions.each do |question|

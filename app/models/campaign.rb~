@@ -19,6 +19,7 @@ class Campaign < ActiveRecord::Base
       self.find :all
     end
   end
+  
   def self.limit_size_sound
     	  
   end
@@ -40,9 +41,15 @@ class Campaign < ActiveRecord::Base
   end
   
   def top_participant(number)
-  	  self.participants.find :all, :limit=> number, :order=> 'time_total asc', :select => 'distinct(user)'
+  	  #self.participants.find :all, :limit=> number, :order=> 'time_total asc', :select => 'distinct(user)'
   	  #self.participants.find :all, :limit=> number, :order=> 'time_total asc', :group => 'user'
+  	  self.participants.all(
+  	  	  :group=>"user",
+  	  	  :limit=>number,
+  	  	  :order=>"time_total asc"
+  	  	  )  	  
   end
+  
   
   def check_publish?
   	  self.questions.each do |question|

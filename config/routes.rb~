@@ -1,35 +1,31 @@
 PhoneAnswer::Application.routes.draw do
+  
+
+  get "dashboard/index"
+
   ActiveAdmin.routes(self)
   
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   get "participant/index"
-
   get "participant/start"
-
   get "participant/go"
-
   get "participant/finish"
-
   get "participant/result"
-
   get "play/start"
-
   get "play/go"
-
   get "play/finish"
-
   get "play/result"
-
+  get "report/export_to_csv"
   resources :results  
   resources :campaigns
   resources :participants
-
+  resources :reports
   devise_for :users
 
   get "home/index"
-  match '/participant' , :to => 'participant#index'
-  match '/participants' , :to => 'participant#index'
+  match '/participants' , :to => 'participants#index'
+  match '/dashboard' , :to => 'dashboard#index'
   
   root :to => "campaigns#index"
   # The priority is based upon order of creation:

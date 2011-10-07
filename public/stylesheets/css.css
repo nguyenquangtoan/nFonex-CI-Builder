@@ -31,23 +31,22 @@ body {
 #header_menu_button {
 	float: left;
 	height: 38px;
-	width: 400px;
 }
 #header_menu_button ul {
 	float: left;
-	padding-left: 5px;
+	padding-left: 15px;
 	padding-top: 0px;
 	margin-top: 10px;
 }
 #header_menu_button ul li {
 	display: inline;
 	list-style-type: none;
-	padding-right: 15px;
-	padding-left: 15px;
 	border-right-width: 1px;
 	border-right-style: solid;
 	border-right-color: #FFF;
 	float: left;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 #header_menu_button ul li a {
 	color: #FFF;
@@ -1306,6 +1305,100 @@ body {
 	margin-left: 20px;
 	padding-top: 7px;
 }
+#Report_content {
+	float: left;
+	width: 940px;
+	margin-top: 20px;
+}
+#Report_content_table {
+	float: left;
+	width: 940px;
+	margin-bottom: 20px;
+}
+#Report_content_table_title {
+	background-image: url(../images/bg_table_campaign.png);
+	background-repeat: repeat-x;
+	float: left;
+	height: 25px;
+	width: 925px;
+	color: #333;
+	font-weight: bold;
+	font-size: 13px;
+	padding-top: 6px;
+	padding-left: 15px;
+}
+#Report_content_table_content {
+	float: left;
+	width: 938px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+}
+#Report_content_table_content_title {
+	background-color: #d8d7d7;
+	float: left;
+	height: 20px;
+	width: 938px;
+	padding-top: 5px;
+	color: #333;
+	font-size: 11px;
+	margin-top: 5px;
+}
+#Report_content_table_content_title_1Colum {
+	text-align: right;
+	float: left;
+	width: 40px;
+}
+#Report_content_table_content_title_1Colum_L {
+	float: left;
+	width: 40px;
+	margin-left: 18px;
+}
+#Report_content_table_content_title_2Colum {
+	float: left;
+	width: 100px;
+	margin-left: 18px;
+}
+#Report_content_table_content_title_3Colum {
+	float: left;
+	width: 160px;
+	margin-left: 18px;
+}
+#Report_content_table_content_details {
+	float: left;
+	width: 938px;
+}
+#Report_content_table_content_details_TR {
+	float: left;
+	width: 938px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	font-size: 11px;
+	margin-top: 5px;
+}
+#Report_content_dowload {
+	float: right;
+	width: 940px;
+	text-align: right;
+}
+#Report_content_dowload a {
+	text-decoration: underline;
+	color: #f16800;
+}
+#Report_content_dowload a:hover {
+	text-decoration: none;
+}
+
+
+
+
 
 
 

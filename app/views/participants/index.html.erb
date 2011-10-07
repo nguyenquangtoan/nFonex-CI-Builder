@@ -9,7 +9,7 @@
                     <%= form_for @search do |f| %>
                     <div id="Participant_content_left_Filter_content">
                     	<div id="Participant_content_left_Filter_content_TR">
-                        	SEARCH USER:
+                        	SEARCH Phone Number:
                         </div>
                         <div id="Participant_content_left_Filter_content_TR">
                         	<%= f.text_field :user_contains , :size=>28 %>
@@ -73,22 +73,22 @@
                     
                     	<div id="Participant_content_right_table_title"><!-- Participant_content_right_table_title -->
                         	<div id="Participant_content_right_table_title_Id">
-                            	ID
+                            	<%= sort_link @search, :id,'ID' %>
                             </div>
                             <div id="Participant_content_right_table_title_User">
-                            	Phone Number
+                            	<%= sort_link @search, :user, 'Phone Number' %>
                             </div>
                             <div id="Participant_content_right_table_title_CID">
-                            	C ID
+                            	<%= sort_link @search, :campaign_id, 'C ID' %>
                             </div>
                              <div id="Participant_content_right_table_title_User">
-                            	Start Time
+                            	<%= sort_link @search, :created_at, 'Start Time' %>
                             </div>
                              <div id="Participant_content_right_table_title_User">
-                            	End Time
+                            	<%= sort_link @search, :updated_at, 'End Time' %>
                             </div>
                             <div id="Participant_content_right_table_title_CID">
-                            	<img src="Image/clock.png" />
+                            	<img src="images/clock.png" />
                             </div>
                         
                         </div><!-- End Participant_content_right_table_title -->

@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
-gem 'haml'
 gem 'kaminari'  
 gem 'devise'
 gem 'nifty-generators'
@@ -12,6 +11,7 @@ gem "meta_where"
 gem "meta_search"
 gem 'formtastic'
 gem "jquery-rails"
+gem 'fastercsv'
 group :development, :test do
   gem 'capybara'
   gem 'rspec-rails'

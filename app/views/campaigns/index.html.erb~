@@ -9,8 +9,7 @@
             <%= link_to "All(#{Campaign.count})", campaigns_path%>| 
             <%= link_to "Activated(#{Campaign.activated.count})", campaigns_path(:status_id=>"1") %> |
             <%= link_to "Inactivated(#{Campaign.inactivated.count})", campaigns_path(:status_id=>"2") %>|
-            <a href="#">Unreleased</a> | 
-            <a href="#">Closed</a>
+            <%= link_to "Unreleased(#{Campaign.unreleased.count})", campaigns_path(:status_id=>"3") %>
         </div><!-- End containt_status-->
         
         <div id="containt_content"><!-- Open Ccontaint_content -->
@@ -39,13 +38,13 @@
                     		SEARCH TITLE
                     	</div>
                     	<div id="containt_content_content_left_filter_Textbox">
-                    		<%= f.text_field :name_contains %>
+                    		<%= f.text_field :name_contains , :size=> 28 %>
                     	</div>
                     	<div id="containt_content_content_left_filter_titleSearch">
                     		SEARCH AUTHOR
                     	</div>
                     	<div id="containt_content_content_left_filter_Textbox">
-                    		<%= f.text_field :user_name_contains %>
+                    		<%= f.text_field :user_name_contains  , :size=> 28%>
                     	</div>
                     	<div id="containt_content_content_left_filter_titleSearch">
                     		CREATE ART
@@ -79,19 +78,19 @@
                     	<div id="containt_content_content_right_tableCampaign_title"><!-- Open containt_content_right_table_campaign_title -->
                         	
                         	<div id="containt_content_content_right_tableCampaign_title_Id">
-                            	Id
+                            	<%= sort_link @search, :id,'ID' %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_title_Name">
-                            	Campaign name
+                            	<%= sort_link @search, :name,'Name' %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_title_Author">
-                            	Author
+                            	<%= sort_link @search, :user_name,'Author' %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_title_Author">
-                            	Categories
+                            	<%= sort_link @search, :category_name,'Categories' %>
                             </div>
                             <div id="containt_content_content_right_tableCampaign_title_Author">
-                            	Amount
+                            	<%= sort_link @search, :user_name,'Amount' %>
                             </div>
                              <div id="containt_content_content_right_tableCampaign_title_Author">
                             	

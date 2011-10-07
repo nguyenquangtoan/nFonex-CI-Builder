@@ -1,4 +1,6 @@
 PhoneAnswer::Application.routes.draw do
+  
+
   get "dashboard/index"
 
   ActiveAdmin.routes(self)
@@ -14,11 +16,12 @@ PhoneAnswer::Application.routes.draw do
   get "play/go"
   get "play/finish"
   get "play/result"
-
+  get "reports/export_to_csv"
+  get "participants/export_to_csv"
   resources :results  
   resources :campaigns
   resources :participants
-
+  resources :reports
   devise_for :users
 
   get "home/index"

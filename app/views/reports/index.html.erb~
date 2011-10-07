@@ -1,0 +1,245 @@
+<% title "Reports" %>
+<div id="containt"><!-- open containt-->
+<!-- Table Winner report -->          
+<div id="Report_content"><!-- report_content -->
+            	
+                <!-- Table Winner report -->
+           		<div id="Report_content_table"><!-- report_content_table -->
+                	<div id="Report_content_table_title">
+                    	Winner Report
+                    </div><!-- End title -->
+                    <div id="Report_content_table_content">
+     
+                    	<div id="Report_content_table_content_title">
+                        	<div id="Report_content_table_content_title_1Colum">
+                            	ID
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	SRC
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	CALLING DATE
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	DUARATION
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	WEEK
+                            </div>
+                        </div><!-- End title -->
+                            
+                        <div id="Report_content_table_content_details">
+                        <% for participant in @participant %>
+                        	<div id="Report_content_table_content_details_TR">
+                            <div id="Report_content_table_content_title_1Colum">
+                            	<%=h participant.id %>
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	<%=h participant.user %>
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	<%=h participant.created_at %>
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	<%=h participant.time_total %>s
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	4
+                            </div>
+                            </div><!-- End TR -->
+                            <% end %> 
+                        	
+                        </div><!-- End table_details -->
+                       
+                    </div><!-- End Report_content_table_content -->
+                	
+                </div><!-- End report_content_table -->
+                
+                <!--------------------- end winner table ------------->
+                <div id="Report_content_dowload">
+                	Download: &nbsp; 
+                <%= link_to "CSV", :action => :index, :format => :csv %>               		 
+                </div><!-- End download -->
+                 <!-- Table Winner report -->
+           		<div id="Report_content_table"><!-- report_content_table -->
+                	<div id="Report_content_table_title">
+                    	General Report <%= Participant.get_top_week(1).count%>
+                    </div><!-- End title -->
+                    <div id="Report_content_table_content">
+                    	<div id="Report_content_table_content_title">
+                        
+                        	<div id="Report_content_table_content_title_1Colum">
+                            	ID
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	CALLER ID
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	CALLING DATE
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	ANSWER DATE
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	HANGUP DATE
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	DUARATION
+                            </div>
+                        
+                        </div><!-- End title -->
+                        
+                        <div id="Report_content_table_content_details">
+                        	<div id="Report_content_table_content_details_TR">
+                           		 <div id="Report_content_table_content_title_1Colum">
+                            		001
+                           		 </div>
+                           		 <div id="Report_content_table_content_title_3Colum">
+                            		012345789
+                           		 </div>
+                           		 <div id="Report_content_table_content_title_3Colum">
+                            		12/12/2011-08:02:11
+                           		 </div>
+                            	<div id="Report_content_table_content_title_3Colum">
+                            		12/12/2011-08:02:11
+                       		  </div>
+                           		 <div id="Report_content_table_content_title_3Colum">
+                            		12/12/2011-08:02:11
+                           		 </div>
+                           		 <div id="Report_content_table_content_title_3Colum">
+                            		10s
+                           		 </div>
+                            	
+                            </div><!-- End tr -->
+                            
+                            <div id="Report_content_table_content_details_TR">
+                           		 <div id="Report_content_table_content_title_1Colum">
+                            		001
+                           		 </div>
+                           		 <div id="Report_content_table_content_title_3Colum">
+                            		012345789
+                           		 </div>
+                           		 <div id="Report_content_table_content_title_3Colum">
+                            		12/12/2011-08:02:11
+                           		 </div>
+                            	<div id="Report_content_table_content_title_3Colum">
+                            		12/12/2011-08:02:11
+                       		  </div>
+                           		 <div id="Report_content_table_content_title_3Colum">
+                            		12/12/2011-08:02:11
+                           		 </div>
+                           		 <div id="Report_content_table_content_title_3Colum">
+                            		10s
+                           		 </div>
+                            	
+                            </div><!-- End tr -->
+                            
+                        </div><!-- End details -->
+                        
+                    </div><!-- End Report_content_table_content -->
+                	
+                </div><!-- End report_content_table -->
+                
+                <!--------------------- end winner table ------------->
+                <div id="Report_content_dowload">
+                	Download: &nbsp; 
+                <%= link_to "CSV", :action => :index, :format => :csv %>               		 
+                </div><!-- End download -->
+                 <!-- Table Winner report -->
+           		<div id="Report_content_table"><!-- report_content_table -->
+                	<div id="Report_content_table_title">
+                    	Activity Report
+                    </div><!-- End title -->
+                    <div id="Report_content_table_content">
+                    	<div id="Report_content_table_content_title">
+                        	<div id="Report_content_table_content_title_1Colum">
+                            	ID
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	CALLER ID
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	DATE
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	QUESTION FILE
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	ANSWER
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	CALLER KEY
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	DUARATION
+                            </div>
+                        </div><!-- End title -->
+                        
+                        <div id="Report_content_table_content_details">
+                          <div id="Report_content_table_content_details_TR">
+                            
+                            <div id="Report_content_table_content_title_1Colum">
+                            	001
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	0123456789
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	12/12/2011-08:02:11
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	123456
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	1
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	1
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	10s
+                            </div>
+                            
+                          </div><!-- End tr -->
+                          
+                           <div id="Report_content_table_content_details_TR">
+                            
+                            <div id="Report_content_table_content_title_1Colum">
+                            	001
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	0123456789
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	12/12/2011-08:02:11
+                            </div>
+                            <div id="Report_content_table_content_title_3Colum">
+                            	123456
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	1
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	1
+                            </div>
+                            <div id="Report_content_table_content_title_2Colum">
+                            	10s
+                            </div>
+                            
+                          </div><!-- End tr -->
+                          
+                        </div><!-- End details -->
+                        
+                    </div><!-- End Report_content_table_content -->
+                	
+                </div><!-- End report_content_table -->
+                
+                <!--------------------- end activity table ------------->
+                         
+           	<div id="Report_content_dowload">
+                	Download: &nbsp; 
+                <%= link_to "CSV", :action => :index, :format => :csv %>               		 
+                </div><!-- End download -->
+           		
+           </div><!-- End report_content -->	
+</div><!-- End_containt -->

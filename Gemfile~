@@ -11,6 +11,7 @@ gem 'yaml_db'
 gem "meta_where"
 gem "meta_search"
 gem 'formtastic'
+gem "jquery-rails"
 group :development, :test do
   gem 'capybara'
   gem 'rspec-rails'

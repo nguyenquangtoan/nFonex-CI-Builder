@@ -24,15 +24,18 @@
             	    <li><%= link_to "Dashboard", :controller => :dashboard %></li>
             	    <li><%= link_to "Campaigns", campaigns_path %></li>
             	    <li><%= link_to "Participants", participants_path %></li>
+            	    <li style="border-right-style:none"><%= link_to "Reports", reports_path %></li>
           	  </ul>
 	</div><!-- End header _menu_button-->
                 
                 <div id="header_menu_SignOut">
 		<% if user_signed_in? %>
 		    Welcome <%= current_user.email %>. Not you?
-		    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+		    <%= link_to "Sign out", destroy_user_session_path %>
 		  <% else %>
-		    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>    
+		    <%= link_to "Sign up", new_user_registration_path %> 
+		    or 
+		    <%= link_to "sign in", new_user_session_path %>    
 		  <% end %>
                 </div>
                 <div id="header_menu_User"><!-- Open header_menu_User-->

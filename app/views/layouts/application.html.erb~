@@ -4,11 +4,11 @@
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
 	<%= stylesheet_link_tag 'css' %>
+	<%= csrf_meta_tag %>  
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800&amp;v2" media="screen, projection" rel="stylesheet" type="text/css" /> 
 	<%= javascript_include_tag :defaults, "nested_form" %>
         <%= javascript_include_tag "jquery-1.4.2.min","highcharts" %>
-        
-        
+        <%= javascript_include_tag "submit" %>    
     <%= yield(:head) %>
   </head>
   <body>
@@ -24,6 +24,7 @@
             	    <li><%= link_to "Dashboard", :controller => :dashboard %></li>
             	    <li><%= link_to "Campaigns", campaigns_path %></li>
             	    <li><%= link_to "Participants", participants_path %></li>
+            	    <li style="border-right-style:none"><%= link_to "Reports", reports_path %></li>
           	  </ul>
 	</div><!-- End header _menu_button-->
                 

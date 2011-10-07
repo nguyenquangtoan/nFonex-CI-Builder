@@ -1,6 +1,7 @@
 class ParticipantsController < ApplicationController
   def index
-   @participant= Participant.all
+   @search = Participant.search(params[:search])
+   @participant = @search.order("created_at DESC").page(params[:page]).per(8)
   end
 
   def start
